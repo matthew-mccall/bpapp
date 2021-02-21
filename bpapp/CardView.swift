@@ -11,12 +11,14 @@ struct CardView: View {
     
     public var post : Post
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @ObservedObject var imageLoader:ImageLoader
     @State var image:UIImage = UIImage()
     
     init(post: Post ) {
         self.post = post
-        imageLoader = ImageLoader(urlString: "https://pixfeeds.com/images/animals/red-pandas/1280-178167661-red-panda.jpg")
+        imageLoader = ImageLoader(urlString: post.imgURL)
     }
     
     var body: some View {
@@ -33,7 +35,7 @@ struct CardView: View {
                     .aspectRatio(1, contentMode: .fit)
                     .clipped()
                     .onReceive(imageLoader.didChange) { data in
-                        self.image = UIImage(data: data)!
+                        self.image = UIImage(data: data) ?? UIImage(named: "720")!
                     }
                 HStack {
                     Label(
@@ -49,11 +51,10 @@ struct CardView: View {
                     .font(.body)
                     .padding(.all)
             }
-            .background(BGBlurView())
-
+            .background(colorScheme == .light ? Color.white : Color.black)
         }
         .cornerRadius(10)
-        .shadow(radius: 10)
+        .shadow(color: Color.gray,radius: 10)
         .padding([.top, .leading, .trailing])
     }
 }
@@ -61,6 +62,10 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         let post = Post(username: "Matthew", desc: "Hello, World!", likes: 69)
-        CardView(post: post)
+        Group {
+            CardView(post: post)
+            CardView(post: post)
+                .preferredColorScheme(.dark)
+        }
     }
 }

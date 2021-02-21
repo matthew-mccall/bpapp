@@ -12,32 +12,17 @@ struct FeedView: View {
     
     public var posts: [Post]? = nil
     
-    var scene: SKScene {
-        let scene = BokehScene()
-        scene.size = CGSize(width: 720, height: 1280)
-        scene.scaleMode = .aspectFill
-        return scene
-    }
-    
     var body: some View {
         if posts == nil {
-            ZStack {
-                SpriteView(scene: scene)
-                    .edgesIgnoringSafeArea(.all)
-                Text("We do not have anything to show")
-            }
+            Text("We do not have anything to show")
         } else {
             NavigationView {
-                ZStack {
-                    SpriteView(scene: scene)
-                        .edgesIgnoringSafeArea(.all)
                     ScrollView {
                         VStack {
                             ForEach(posts!) { post in
                                 CardView(post: post)
                             }
                         }
-                    }
                 }
                 .navigationBarTitle("Feed")
                 .navigationViewStyle(StackNavigationViewStyle())

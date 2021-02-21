@@ -9,9 +9,10 @@ import Foundation
 
 struct Post : Identifiable {
     var username: String
-    var imgURL: String = "https://via.placeholder.com/1080"
+    var imgURL: String = "https://pixfeeds.com/images/animals/red-pandas/1280-178167661-red-panda.jpg"
     var desc: String
     var id: String { NSUUID().uuidString }
     var likes: UInt64? = nil
     var comments: [String]? = nil
+    var tag: [Tag]? = nil
 }
