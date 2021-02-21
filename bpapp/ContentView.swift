@@ -31,6 +31,7 @@ struct ContentView: View {
         .onAppear() {
             UITabBar.appearance().barTintColor = .white  }
         .accentColor(.blue)
+        .preferredColorScheme(.dark)
         }
     }
 

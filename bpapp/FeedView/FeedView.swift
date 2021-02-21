@@ -24,7 +24,7 @@ struct FeedView: View {
             ZStack {
                 SpriteView(scene: scene)
                     .edgesIgnoringSafeArea(.all)
-                    CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
+                Text("We do not have anything to show")
             }
         } else {
             NavigationView {
@@ -41,7 +41,7 @@ struct FeedView: View {
                 }
                 .navigationBarTitle("Feed")
                 .navigationViewStyle(StackNavigationViewStyle())
-            }.preferredColorScheme(.dark)
+            }
         }
     }
 }
