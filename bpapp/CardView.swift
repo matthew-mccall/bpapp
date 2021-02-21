@@ -18,7 +18,7 @@ struct CardView: View {
     
     init(post: Post ) {
         self.post = post
-        imageLoader = ImageLoader(urlString: post.imgURL)
+        imageLoader = ImageLoader(urlString: "https://pixfeeds.com/images/animals/red-pandas/1280-178167661-red-panda.jpg" )
     }
     
     var body: some View {

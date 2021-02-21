@@ -7,11 +7,14 @@
 
 import SwiftUI
 import PhotosUI
+import CoreML
+import Vision
 
 struct NewPostView: View {
     
     @State private var isPresented: Bool = false
     @State private var result: UIImage = UIImage(named: "720")!
+    @StateObject private var classifier: ImageClassifier = ImageClassifier()
     
     var body: some View {
         VStack {
@@ -41,7 +44,7 @@ struct NewPostView: View {
                     PhotoPicker(configuration: configuration, pickerResult: $result, isPresented: $isPresented)
                 }
                 Button(action: {
-                    // TODO: upload picture
+                    classifier.updateClassifications(for: result)
                 }) {
                     Label("Post", systemImage: "square.and.arrow.up")
                         .padding(10.0)
@@ -51,6 +54,10 @@ struct NewPostView: View {
                         )
                         .disabled(result == UIImage(named: "720")!)
                 }
+            }
+            
+            if (result != UIImage(named: "720")) {
+                Text(classifier.classification)
             }
         }
     }

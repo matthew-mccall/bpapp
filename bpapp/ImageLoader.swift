@@ -17,7 +17,7 @@ class ImageLoader: ObservableObject {
             didChange.send(data)
         }
     }
-    
+        
     init(urlString : String) {
         
         guard let url = URL(string: urlString) else { return }

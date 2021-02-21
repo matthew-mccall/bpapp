@@ -19,6 +19,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Feed", systemImage: "house")
                 }
+            SpacesView()
+                .tabItem {
+                    Label("Spaces", systemImage: "person.2")
+                }
             NewPostView()
                 .tabItem {
                     Label("Post", systemImage: "camera")

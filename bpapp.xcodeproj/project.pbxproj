@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E78315525E2FD4C0080B527 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315425E2FD4C0080B527 /* Tag.swift */; };
+		2E78315D25E307480080B527 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315C25E307480080B527 /* MobileNetV2.mlmodel */; };
+		2E78316025E307850080B527 /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315F25E307850080B527 /* ImageClassification.swift */; };
+		2E78316525E3129E0080B527 /* SpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78316425E3129E0080B527 /* SpacesView.swift */; };
 		2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35F525E2C029005BFFA9 /* NewPostView.swift */; };
 		2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */; };
 		2E8C360025E2CD1B005BFFA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		2E78315425E2FD4C0080B527 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		2E78315C25E307480080B527 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		2E78315F25E307850080B527 /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
+		2E78316425E3129E0080B527 /* SpacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesView.swift; sourceTree = "<group>"; };
 		2E8C35F525E2C029005BFFA9 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bpapp.entitlements; sourceTree = "<group>"; };
 		2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
@@ -52,11 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E78316725E312A40080B527 /* SpacesView */ = {
+			isa = PBXGroup;
+			children = (
+				2E78316425E3129E0080B527 /* SpacesView.swift */,
+			);
+			path = SpacesView;
+			sourceTree = "<group>";
+		};
 		2E8C35F425E2C016005BFFA9 /* NewPostView */ = {
 			isa = PBXGroup;
 			children = (
 				2E8C35F525E2C029005BFFA9 /* NewPostView.swift */,
 				2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */,
+				2E78315F25E307850080B527 /* ImageClassification.swift */,
 			);
 			path = NewPostView;
 			sourceTree = "<group>";
@@ -96,6 +111,8 @@
 		2EDB737225E0002A005832A2 /* bpapp */ = {
 			isa = PBXGroup;
 			children = (
+				2E78316725E312A40080B527 /* SpacesView */,
+				2E78315C25E307480080B527 /* MobileNetV2.mlmodel */,
 				2E8C360325E2D98B005BFFA9 /* ProfileView */,
 				2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */,
 				2E8C35F425E2C016005BFFA9 /* NewPostView */,
@@ -193,14 +210,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBD4C5725E29AB300B1A210 /* FeedView.swift in Sources */,
+				2E78316525E3129E0080B527 /* SpacesView.swift in Sources */,
 				2EDB737625E0002A005832A2 /* ContentView.swift in Sources */,
 				2E78315525E2FD4C0080B527 /* Tag.swift in Sources */,
+				2E78316025E307850080B527 /* ImageClassification.swift in Sources */,
 				2E8C360525E2D9A2005BFFA9 /* ProfileView.swift in Sources */,
 				2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */,
 				2E8C360825E2DFE1005BFFA9 /* ImageLoader.swift in Sources */,
 				2EDB737425E0002A005832A2 /* bpappApp.swift in Sources */,
 				2EE0448A25E2A35B00B73A13 /* Post.swift in Sources */,
 				2EBD4C5A25E29DD700B1A210 /* CardView.swift in Sources */,
+				2E78315D25E307480080B527 /* MobileNetV2.mlmodel in Sources */,
 				2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
