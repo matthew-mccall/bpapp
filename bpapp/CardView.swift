@@ -12,14 +12,20 @@ struct CardView: View {
     public var post : Post
     
     var body: some View {
-        VStack(alignment: .leading) {
+        Group {
             VStack(alignment: .leading) {
                 HStack {
-                    Text(post.username) // TODO: Link
+                    Text(post.username)
+                        .font(.subheadline) // TODO: Link
                         .padding([.top, .leading, .trailing])
                     Spacer()
                 }
+                if (post.imgURL == "") {
+                    Divider()
+                        .padding(.horizontal)
+                }
                 Text(post.desc)
+                    .font(.body)
                     .padding([.leading, .bottom, .trailing])
             }
             .background(BGBlurView())
@@ -27,7 +33,7 @@ struct CardView: View {
         }
         .cornerRadius(10)
         .shadow(radius: 10)
-        .padding()
+        .padding([.top, .leading, .trailing])
     }
 }
 

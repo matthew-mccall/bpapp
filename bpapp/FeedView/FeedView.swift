@@ -9,7 +9,7 @@ import SwiftUI
 import SpriteKit
 
 struct FeedView: View {
-    
+        
     public var posts: [Post]? = nil
     
     var scene: SKScene {
@@ -20,11 +20,27 @@ struct FeedView: View {
     }
     
     var body: some View {
-        ZStack {
-            SpriteView(scene: scene)
-                .edgesIgnoringSafeArea(.all)
-            if posts == nil {
-                CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
+        if posts == nil {
+            ZStack {
+                SpriteView(scene: scene)
+                    .edgesIgnoringSafeArea(.all)
+                    CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
+            }
+        } else {
+            NavigationView {
+                ZStack {
+                    SpriteView(scene: scene)
+                        .edgesIgnoringSafeArea(.all)
+                    CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
+                    LazyVStack {
+                        ForEach(posts!) { post in
+                            CardView(post: post)
+                        }
+                    }
+                }
+                .navigationBarTitle(
+                    Text("Feed")
+                )
             }
         }
     }
@@ -32,6 +48,11 @@ struct FeedView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        Group {
+            FeedView()
+            FeedView(posts: [
+                Post(username: "_mmapp", imgURL: "", desc: "Hello!")
+            ])
+        }
     }
 }

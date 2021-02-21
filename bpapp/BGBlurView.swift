@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BGBlurView: UIViewRepresentable {
     
-    var style: UIBlurEffect.Style = .systemUltraThinMaterial
+    var style: UIBlurEffect.Style = .systemThinMaterial
     
     func makeUIView(context: Context) -> UIVisualEffectView {
         return UIVisualEffectView(effect: UIBlurEffect(style: style))

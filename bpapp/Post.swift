@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Post {
+struct Post : Identifiable {
     var username: String
-    var imgURL: String
+    var imgURL: String?
     var desc: String
+    var id: String { NSUUID().uuidString }
 }
