@@ -9,7 +9,7 @@ import SwiftUI
 import SpriteKit
 
 struct FeedView: View {
-        
+    
     public var posts: [Post]? = nil
     
     var scene: SKScene {
@@ -39,10 +39,9 @@ struct FeedView: View {
                         }
                     }
                 }
-                .navigationBarTitle(
-                    Text("Feed")
-                )
-            }
+                .navigationBarTitle("Feed")
+                .navigationViewStyle(StackNavigationViewStyle())
+            }.preferredColorScheme(.dark)
         }
     }
 }
