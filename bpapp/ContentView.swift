@@ -17,15 +17,15 @@ struct ContentView: View {
 
             ])
                 .tabItem {
-                    Image(systemName: "house")
+                    Label("Feed", systemImage: "house")
                 }
             Text("Post")
                 .tabItem {
-                    Image(systemName: "camera")
+                    Label("Post", systemImage: "camera")
                 }
             Text("Profile")
                 .tabItem {
-                    Image(systemName: "person")
+                    Label("Profile", systemImage: "person")
                 }
         }
         .onAppear() {
