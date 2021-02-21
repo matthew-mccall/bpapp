@@ -11,7 +11,7 @@ import PhotosUI
 struct NewPostView: View {
     
     @State private var isPresented: Bool = false
-    @State private var result: UIImage = UIImage(named: "1080")!
+    @State private var result: UIImage = UIImage(named: "720")!
     
     var body: some View {
         VStack {
@@ -25,12 +25,32 @@ struct NewPostView: View {
             .shadow(radius: 10)
             .padding()
             
-            Button("Pick a picture") {
-                isPresented.toggle()
-            }
-            .sheet(isPresented: $isPresented) {
-                let configuration = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
-                PhotoPicker(configuration: configuration, pickerResult: $result, isPresented: $isPresented)
+            HStack {
+                Button(action: {
+                    isPresented.toggle()
+                }) {
+                    Label("Pick a picture", systemImage: "photo")
+                        .padding(10.0)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 1.0)
+                        )
+                }
+                .sheet(isPresented: $isPresented) {
+                    let configuration = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
+                    PhotoPicker(configuration: configuration, pickerResult: $result, isPresented: $isPresented)
+                }
+                Button(action: {
+                    // TODO: upload picture
+                }) {
+                    Label("Post", systemImage: "square.and.arrow.up")
+                        .padding(10.0)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 1.0)
+                        )
+                        .disabled(result == UIImage(named: "720")!)
+                }
             }
         }
     }
