@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35F525E2C029005BFFA9 /* NewPostView.swift */; };
+		2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */; };
+		2E8C360025E2CD1B005BFFA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */; };
 		2EBD4C4125E295CE00B1A210 /* BokehParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD4C3F25E295CE00B1A210 /* BokehParticle.sks */; };
 		2EBD4C4225E295CE00B1A210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD4C4025E295CE00B1A210 /* Assets.xcassets */; };
 		2EBD4C5125E2993300B1A210 /* BokehScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD4C5025E2993300B1A210 /* BokehScene.swift */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E8C35F525E2C029005BFFA9 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bpapp.entitlements; sourceTree = "<group>"; };
+		2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2EBD4C3F25E295CE00B1A210 /* BokehParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehParticle.sks; sourceTree = "<group>"; };
 		2EBD4C4025E295CE00B1A210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBD4C5025E2993300B1A210 /* BokehScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokehScene.swift; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8C35F425E2C016005BFFA9 /* NewPostView */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C35F525E2C029005BFFA9 /* NewPostView.swift */,
+				2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */,
+			);
+			path = NewPostView;
+			sourceTree = "<group>";
+		};
 		2EBD4C3E25E2958200B1A210 /* FeedView */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +93,8 @@
 		2EDB737225E0002A005832A2 /* bpapp */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */,
+				2E8C35F425E2C016005BFFA9 /* NewPostView */,
 				2EBD4C3E25E2958200B1A210 /* FeedView */,
 				2EDB737325E0002A005832A2 /* bpappApp.swift */,
 				2EDB737525E0002A005832A2 /* ContentView.swift */,
@@ -86,6 +104,7 @@
 				2EBD4C5925E29DD700B1A210 /* CardView.swift */,
 				2EBD4C5C25E29DE800B1A210 /* BGBlurView.swift */,
 				2EE0448925E2A35B00B73A13 /* Post.swift */,
+				2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */,
 			);
 			path = bpapp;
 			sourceTree = "<group>";
@@ -158,6 +177,7 @@
 				2EDB737B25E0002B005832A2 /* Preview Assets.xcassets in Resources */,
 				2EBD4C4125E295CE00B1A210 /* BokehParticle.sks in Resources */,
 				2EBD4C4225E295CE00B1A210 /* Assets.xcassets in Resources */,
+				2E8C360025E2CD1B005BFFA9 /* Launch Screen.storyboard in Resources */,
 				2EDB737825E0002B005832A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,11 +191,13 @@
 			files = (
 				2EBD4C5725E29AB300B1A210 /* FeedView.swift in Sources */,
 				2EDB737625E0002A005832A2 /* ContentView.swift in Sources */,
+				2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */,
 				2EBD4C5125E2993300B1A210 /* BokehScene.swift in Sources */,
 				2EDB737425E0002A005832A2 /* bpappApp.swift in Sources */,
 				2EBD4C5D25E29DE800B1A210 /* BGBlurView.swift in Sources */,
 				2EE0448A25E2A35B00B73A13 /* Post.swift in Sources */,
 				2EBD4C5A25E29DD700B1A210 /* CardView.swift in Sources */,
+				2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bpapp/bpapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bpapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 9GTV8WS348;
@@ -316,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mmccall.bpapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bpapp/bpapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bpapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 9GTV8WS348;
@@ -338,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mmccall.bpapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
