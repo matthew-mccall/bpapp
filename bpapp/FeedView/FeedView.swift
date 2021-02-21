@@ -10,6 +10,8 @@ import SpriteKit
 
 struct FeedView: View {
     
+    public var posts: [Post]? = nil
+    
     var scene: SKScene {
         let scene = BokehScene()
         scene.size = CGSize(width: 720, height: 1280)
@@ -21,8 +23,8 @@ struct FeedView: View {
         ZStack {
             SpriteView(scene: scene)
                 .edgesIgnoringSafeArea(.all)
-            LazyVStack {
-                
+            if posts == nil {
+                CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
             }
         }
     }

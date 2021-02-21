@@ -13,26 +13,27 @@ struct CardView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Text(post.username) // TODO: Link
-                    .padding()
-                Spacer()
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(post.username) // TODO: Link
+                        .padding([.top, .leading, .trailing])
+                    Spacer()
+                }
+                Text(post.desc)
+                    .padding([.leading, .bottom, .trailing])
             }
-            Text(post.desc)
-                .padding()
+            .background(BGBlurView())
+
         }
-        .cornerRadius(32)
-        .shadow(radius: 16)
-        .background(BGBlurView())
+        .cornerRadius(10)
+        .shadow(radius: 10)
         .padding()
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        
         let post = Post(username: "Matthew", imgURL: "", desc: "Hello, World!")
-        
         CardView(post: post)
     }
 }
