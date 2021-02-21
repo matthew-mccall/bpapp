@@ -10,7 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Feed")
+            FeedView(posts: [
+                Post(username: "_mmapp", imgURL: "", desc: "Hello!"),
+                Post(username: "brimanella", imgURL: "", desc: "Hello!"),
+                Post(username: "JK", imgURL: "", desc: "Hello!")
+
+            ])
                 .tabItem {
                     Image(systemName: "house")
                 }
@@ -26,8 +31,8 @@ struct ContentView: View {
         .onAppear() {
             UITabBar.appearance().barTintColor = .white  }
         .accentColor(.blue)
-    }
         }
+    }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

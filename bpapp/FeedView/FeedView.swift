@@ -31,10 +31,11 @@ struct FeedView: View {
                 ZStack {
                     SpriteView(scene: scene)
                         .edgesIgnoringSafeArea(.all)
-                    CardView(post: Post(username: "Error", imgURL: "", desc: "We have nothing to show"))
-                    LazyVStack {
-                        ForEach(posts!) { post in
-                            CardView(post: post)
+                    ScrollView {
+                        VStack {
+                            ForEach(posts!) { post in
+                                CardView(post: post)
+                            }
                         }
                     }
                 }
