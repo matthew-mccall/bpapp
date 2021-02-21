@@ -10,6 +10,7 @@
 		2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35F525E2C029005BFFA9 /* NewPostView.swift */; };
 		2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */; };
 		2E8C360025E2CD1B005BFFA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */; };
+		2E8C360525E2D9A2005BFFA9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C360425E2D9A2005BFFA9 /* ProfileView.swift */; };
 		2EBD4C4125E295CE00B1A210 /* BokehParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD4C3F25E295CE00B1A210 /* BokehParticle.sks */; };
 		2EBD4C4225E295CE00B1A210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD4C4025E295CE00B1A210 /* Assets.xcassets */; };
 		2EBD4C5125E2993300B1A210 /* BokehScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD4C5025E2993300B1A210 /* BokehScene.swift */; };
@@ -28,6 +29,7 @@
 		2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bpapp.entitlements; sourceTree = "<group>"; };
 		2E8C35FC25E2C419005BFFA9 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		2E8C35FF25E2CD1B005BFFA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2E8C360425E2D9A2005BFFA9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2EBD4C3F25E295CE00B1A210 /* BokehParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehParticle.sks; sourceTree = "<group>"; };
 		2EBD4C4025E295CE00B1A210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBD4C5025E2993300B1A210 /* BokehScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokehScene.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = NewPostView;
 			sourceTree = "<group>";
 		};
+		2E8C360325E2D98B005BFFA9 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C360425E2D9A2005BFFA9 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		2EBD4C3E25E2958200B1A210 /* FeedView */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		2EDB737225E0002A005832A2 /* bpapp */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C360325E2D98B005BFFA9 /* ProfileView */,
 				2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */,
 				2E8C35F425E2C016005BFFA9 /* NewPostView */,
 				2EBD4C3E25E2958200B1A210 /* FeedView */,
@@ -191,6 +202,7 @@
 			files = (
 				2EBD4C5725E29AB300B1A210 /* FeedView.swift in Sources */,
 				2EDB737625E0002A005832A2 /* ContentView.swift in Sources */,
+				2E8C360525E2D9A2005BFFA9 /* ProfileView.swift in Sources */,
 				2E8C35FD25E2C419005BFFA9 /* PhotoPicker.swift in Sources */,
 				2EBD4C5125E2993300B1A210 /* BokehScene.swift in Sources */,
 				2EDB737425E0002A005832A2 /* bpappApp.swift in Sources */,
