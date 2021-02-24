@@ -6,17 +6,12 @@
 //
 
 import Foundation
-import Combine
+import CoreImage
+import UIKit
 
 class ImageLoader: ObservableObject {
     
-    var didChange = PassthroughSubject<Data, Never>()
-    
-    var data = Data() {
-        didSet {
-            didChange.send(data)
-        }
-    }
+    @Published var img : UIImage? = nil
         
     init(urlString : String) {
         
@@ -25,7 +20,8 @@ class ImageLoader: ObservableObject {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             DispatchQueue.main.async {
-                self.data = data
+                self.img = UIImage(data: data)
+                print("Fetched image!")
             }
         }
         task.resume()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2AE87E25E316440091834D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AE87D25E316440091834D /* Assets.xcassets */; };
 		2E78315525E2FD4C0080B527 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315425E2FD4C0080B527 /* Tag.swift */; };
 		2E78315D25E307480080B527 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315C25E307480080B527 /* MobileNetV2.mlmodel */; };
 		2E78316025E307850080B527 /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315F25E307850080B527 /* ImageClassification.swift */; };
@@ -20,12 +21,12 @@
 		2EBD4C5A25E29DD700B1A210 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD4C5925E29DD700B1A210 /* CardView.swift */; };
 		2EDB737425E0002A005832A2 /* bpappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB737325E0002A005832A2 /* bpappApp.swift */; };
 		2EDB737625E0002A005832A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB737525E0002A005832A2 /* ContentView.swift */; };
-		2EDB737825E0002B005832A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB737725E0002B005832A2 /* Assets.xcassets */; };
 		2EDB737B25E0002B005832A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB737A25E0002B005832A2 /* Preview Assets.xcassets */; };
 		2EE0448A25E2A35B00B73A13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0448925E2A35B00B73A13 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2AE87D25E316440091834D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E78315425E2FD4C0080B527 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		2E78315C25E307480080B527 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		2E78315F25E307850080B527 /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		2EDB737025E0002A005832A2 /* bpapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bpapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDB737325E0002A005832A2 /* bpappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpappApp.swift; sourceTree = "<group>"; };
 		2EDB737525E0002A005832A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2EDB737725E0002B005832A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDB737A25E0002B005832A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2EDB737C25E0002B005832A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EE0448925E2A35B00B73A13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -111,6 +111,7 @@
 		2EDB737225E0002A005832A2 /* bpapp */ = {
 			isa = PBXGroup;
 			children = (
+				2E2AE87D25E316440091834D /* Assets.xcassets */,
 				2E78316725E312A40080B527 /* SpacesView */,
 				2E78315C25E307480080B527 /* MobileNetV2.mlmodel */,
 				2E8C360325E2D98B005BFFA9 /* ProfileView */,
@@ -119,7 +120,6 @@
 				2EBD4C3E25E2958200B1A210 /* FeedView */,
 				2EDB737325E0002A005832A2 /* bpappApp.swift */,
 				2EDB737525E0002A005832A2 /* ContentView.swift */,
-				2EDB737725E0002B005832A2 /* Assets.xcassets */,
 				2EDB737C25E0002B005832A2 /* Info.plist */,
 				2EDB737925E0002B005832A2 /* Preview Content */,
 				2EBD4C5925E29DD700B1A210 /* CardView.swift */,
@@ -197,8 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDB737B25E0002B005832A2 /* Preview Assets.xcassets in Resources */,
+				2E2AE87E25E316440091834D /* Assets.xcassets in Resources */,
 				2E8C360025E2CD1B005BFFA9 /* Launch Screen.storyboard in Resources */,
-				2EDB737825E0002B005832A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

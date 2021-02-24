@@ -13,12 +13,11 @@ struct CardView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
-    @ObservedObject var imageLoader:ImageLoader
-    @State var image:UIImage = UIImage()
+    @ObservedObject var imageLoader : ImageLoader
     
     init(post: Post ) {
         self.post = post
-        imageLoader = ImageLoader(urlString: "https://pixfeeds.com/images/animals/red-pandas/1280-178167661-red-panda.jpg" )
+        imageLoader = ImageLoader(urlString: post.imgURL)
     }
     
     var body: some View {
@@ -30,13 +29,10 @@ struct CardView: View {
                         .padding([.top, .leading, .trailing])
                     Spacer()
                 }
-                Image(uiImage: image)
+                Image(uiImage: (imageLoader.img ?? UIImage(named: "720"))!)
                     .resizable()
                     .aspectRatio(1, contentMode: .fit)
                     .clipped()
-                    .onReceive(imageLoader.didChange) { data in
-                        self.image = UIImage(data: data) ?? UIImage(named: "720")!
-                    }
                 HStack {
                     Label(
                         title: { Text("\(post.likes ?? 0)") },

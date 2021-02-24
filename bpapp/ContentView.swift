@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             FeedView(posts: [
-                Post(username: "_mmapp", imgURL: "", desc: "Hello!"),
-                Post(username: "brimanella", imgURL: "", desc: "Hello!"),
-                Post(username: "JK", imgURL: "", desc: "Hello!")
+                Post(username: "_mmapp", desc: "Hello"),
+                Post(username: "brimanella", desc: "from"),
+                Post(username: "JK", desc: "Nova")
 
             ])
                 .tabItem {
