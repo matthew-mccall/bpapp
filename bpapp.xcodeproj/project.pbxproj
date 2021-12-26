@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E2AE87E25E316440091834D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AE87D25E316440091834D /* Assets.xcassets */; };
 		2E78315525E2FD4C0080B527 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315425E2FD4C0080B527 /* Tag.swift */; };
-		2E78315D25E307480080B527 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315C25E307480080B527 /* MobileNetV2.mlmodel */; };
 		2E78316025E307850080B527 /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78315F25E307850080B527 /* ImageClassification.swift */; };
 		2E78316525E3129E0080B527 /* SpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78316425E3129E0080B527 /* SpacesView.swift */; };
 		2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C35F525E2C029005BFFA9 /* NewPostView.swift */; };
@@ -23,12 +22,12 @@
 		2EDB737625E0002A005832A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB737525E0002A005832A2 /* ContentView.swift */; };
 		2EDB737B25E0002B005832A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDB737A25E0002B005832A2 /* Preview Assets.xcassets */; };
 		2EE0448A25E2A35B00B73A13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0448925E2A35B00B73A13 /* Post.swift */; };
+		5088EAF12779263000F80A63 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5088EAF02779263000F80A63 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E2AE87D25E316440091834D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E78315425E2FD4C0080B527 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		2E78315C25E307480080B527 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		2E78315F25E307850080B527 /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
 		2E78316425E3129E0080B527 /* SpacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesView.swift; sourceTree = "<group>"; };
 		2E8C35F525E2C029005BFFA9 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		2EDB737A25E0002B005832A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2EDB737C25E0002B005832A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EE0448925E2A35B00B73A13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5088EAF02779263000F80A63 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		2EDB737225E0002A005832A2 /* bpapp */ = {
 			isa = PBXGroup;
 			children = (
+				5088EAF02779263000F80A63 /* MobileNetV2.mlmodel */,
 				2E2AE87D25E316440091834D /* Assets.xcassets */,
 				2E78316725E312A40080B527 /* SpacesView */,
-				2E78315C25E307480080B527 /* MobileNetV2.mlmodel */,
 				2E8C360325E2D98B005BFFA9 /* ProfileView */,
 				2E8C35FA25E2C075005BFFA9 /* bpapp.entitlements */,
 				2E8C35F425E2C016005BFFA9 /* NewPostView */,
@@ -220,7 +220,7 @@
 				2EDB737425E0002A005832A2 /* bpappApp.swift in Sources */,
 				2EE0448A25E2A35B00B73A13 /* Post.swift in Sources */,
 				2EBD4C5A25E29DD700B1A210 /* CardView.swift in Sources */,
-				2E78315D25E307480080B527 /* MobileNetV2.mlmodel in Sources */,
+				5088EAF12779263000F80A63 /* MobileNetV2.mlmodel in Sources */,
 				2E8C35F625E2C029005BFFA9 /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
